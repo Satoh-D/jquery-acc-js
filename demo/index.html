@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Demo | jQuery Acc JS</title>
+<link href="http://www.css-reset.com/css/meyer.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<style>
+.mod-page {
+	padding: 100px 200px;
+}
+.mod-ttl {
+	font-size: 200%;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.mod-section {
+	border: 1px solid #333;
+}
+.mod-section-ttl {
+}
+.mod-section-ttl a {
+	display: block;
+	padding: 1em;
+}
+.mod-section-in {
+	border-top: 1px solid #333;
+	padding: 1em;
+}
+.mod-section-in p {
+	margin: 1em 0;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+<script src="../jquery.acc.js"></script>
+<script>
+$(function() {
+	$('.js-acc').acc({
+		accToggleBtn: '.mod-section-ttl a',
+		accToggleTarget: '.mod-section-in'
+	});
+});
+</script>
+</head>
+<body>
+<div class="mod-page">
+
+<h1 class="mod-ttl">jQuery Acc JS</h1>
+
+<section class="mod-section js-acc">
+<h2 class="mod-section-ttl"><a href="">Title</a></h2>
+<div class="mod-section-in">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ut sapiente inventore adipisci rem, voluptatum dolorem necessitatibus! Nulla aliquam quae ut voluptatibus, ad, laboriosam molestias sed magni delectus distinctio consequuntur.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ut sapiente inventore adipisci rem, voluptatum dolorem necessitatibus! Nulla aliquam quae ut voluptatibus, ad, laboriosam molestias sed magni delectus distinctio consequuntur.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ut sapiente inventore adipisci rem, voluptatum dolorem necessitatibus! Nulla aliquam quae ut voluptatibus, ad, laboriosam molestias sed magni delectus distinctio consequuntur.</p>
+<!-- /mod-section-in --></div>
+<!-- /mod-secdtion --></section>
+
+<!-- /mod-page --></div>
+</body>
+</html>
